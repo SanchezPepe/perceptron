@@ -127,5 +127,5 @@ plt.show()
 ```
 
 
-![png](perceptron_files/perceptron_22_0.png)
+![png](images/perceptron_22_0.png)
 
