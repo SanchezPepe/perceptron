@@ -1,9 +1,11 @@
 
 ## From Biology to AI: The Perceptron
 
-This is the Python Jupyter Notebook for the Medium article on how to implement the Perceptron algorithm in Python.
+This is the Python Jupyter Notebook for the [Medium article](https://towardsdatascience.com/from-biology-to-ai-the-perceptron-81abfdc788bf) on how to implement the Perceptron algorithm in Python.
 
-We'll start by importing some libaries for generating a dataset and visualiying our results. The Perceptron implementation will be in NumPy.
+It has been a long standing task to create machines that can act and reason in a similar fashion as humans do. And while there has been lots of progress in artificial intelligence (AI) and machine learning in recent years some of the groundwork has already been laid out more than 60 years ago. In this Jupyter notebook we will explore how to implement one of the earliest attempts of creating machine intelligence: The Perceptron. This algorithm is one of the past milestones on the way to the modern deep learning algorithms.
+
+We'll start by importing some libraries for generating a dataset and visualizing our results. The Perceptron implementation will be in NumPy.
 
 
 ```python
@@ -14,7 +16,7 @@ import numpy as np
 %matplotlib inline
 ```
 
-So now that we imported everything we need for our implementation of the Perceptron algorithm we should generate some data to work with. Luckyly scikit learn provides a function called make_blobs that does exactly this for us.
+So now that we imported everything we need for our implementation of the Perceptron algorithm we should generate some data to work with. Luckily scikit learn provides a function called make_blobs that does exactly this for us.
 
 
 ```python
@@ -29,10 +31,10 @@ plt.show()
 ```
 
 
-![png](images/perceptron_4_0.png)
+![png](perceptron_files/perceptron_4_0.png)
 
 
-Ok by looking at the above plot we can see that both clusters can be lineary separeted. So lets start coding out the Perceptron.
+Ok by looking at the above plot we can see that both clusters can be linearly separated. So lets start coding out the Perceptron.
 
 First we add a bias (ones) term to the inputs.
 
@@ -99,7 +101,7 @@ result = [w.transpose().dot(x) for x in X_bias]
 result_class = [activation(w.transpose().dot(x)) for x in X_bias]
 ```
 
-Calculate the unit vector of the weight vector 
+Calculate the unit vector of the weight vector
 
 
 ```python
@@ -127,5 +129,4 @@ plt.show()
 ```
 
 
-![png](images/perceptron_22_0.png)
-
+![png](perceptron_files/perceptron_22_0.png)
