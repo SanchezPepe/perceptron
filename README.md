@@ -31,7 +31,7 @@ plt.show()
 ```
 
 
-![png](perceptron_files/perceptron_4_0.png)
+![png](images/perceptron_4_0.png)
 
 
 Ok by looking at the above plot we can see that both clusters can be linearly separated. So lets start coding out the Perceptron.
@@ -129,4 +129,4 @@ plt.show()
 ```
 
 
-![png](perceptron_files/perceptron_22_0.png)
+![png](images/perceptron_22_0.png)
